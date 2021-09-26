@@ -1,0 +1,125 @@
+<!-- code เริ่มต้น `html:5 => enter` -->
+<!DOCTYPE html>
+<html lang="en"> <!-- Attribute lang="en" เพื่อประกาศภาษาของเว็ปเพจ en -->
+<head><!-- ส่วน head ของ html -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Attribute name="viewport" ทำให้แสดงผลในมือถือได้ -->
+    <meta name="description" content="เว็ปสรุป HTML5"><!-- Attribute name="description" รายละเอียดของ website -->
+    <meta name="author"  content="Bird pakornpong"><!-- Attribute name="author" ผู้พัฒนา -->
+    <meta name="keywords" content="html5"><!-- Attribute name="keywords" keywords ในการค้นหา -->
+    <title>HTML5 conclusion</title><!-- หัวข้อ ชื่อที่ขึ้นของ website -->
+    <style type="text/css">
+        nav { 
+            display: flex;
+            flex-wrap: wrap; /* flex-wrap: wrap ทำให้ element ข้างใน ขึ้นบรรทัดใหม่ เหมือนเกินความกว้าง*/
+        }
+        nav a { /* nav a คือการกำหนด css ให้ tag a in tag nav */
+            text-decoration: none;
+            padding: 15px 25px;
+            color: #464141;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        aside { 
+            float: left;
+        }
+        aside nav {
+            width: 250px;
+            height: 350px;
+        }
+    </style>
+</head>
+<body><!-- ส่วน body ของ html -->
+    <header> <!-- tag อ้างถึงส่วนหัวหรือบนสุดของเอกสาร -->
+        <hgroup> <!-- tag ห่อ <h1> - <h6> ใน heading -->
+            <h1>HTML5 Conclusion</h1>
+            <h2>HTML5 Semantic Markup (ระบุความหมาย)</h2>
+        </hgroup>
+    </header>
+    <nav><!-- HTML5 tag is specify a block of navigation links หรือ อ้างถึงเมนู -->
+        <a href="https://www.youtube.com/watch?v=0hfeNPM7piw">Home</a>
+        <a href="https://www.w3docs.com/learn-html/html-a-tag.html">Projects</a>
+        <a href="https://www.designil.com/html5-tips-tricks-techniques-1/">Portfolio</a>
+        <a href="#">Profile</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        <a href="#">Cart</a>
+        <a href="#">Bird</a>
+        <a href="#">Pang</a>
+        <a href="#">Attribute</a>
+        <a href="#">Element</a>
+        <a href="#">Argument</a>
+        <a href="#">Description</a>
+        <a href="#">Author</a>
+        <a href="https://www.mindphp.com/%E0%B8%9A%E0%B8%97%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C/%E0%B8%9A%E0%B8%97%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99-html5.html">HTML5</a>
+        <a href="https://www.mindphp.com/%E0%B8%9A%E0%B8%97%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C/%E0%B8%9A%E0%B8%97%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99-css.html">CSS3</a>
+        <a href="#">Javascript</a>
+    </nav>
+    <aside><!-- HTML5 ใช้เป็นส่วนแถวด้านข้าง Sidebar ส่วนของเนื้อหาที่เกี่ยวข้องโดยรอบ -->
+        <h2> aside link </h2>
+        <nav>
+            <ul>
+                <li><a href="#"> หมวดหมู่ 1</a></li>
+                <li><a href="#">หมวดหมู่ 2</a></li>
+                <li><a href="#">หมวดหมู่ 3</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <article><!-- HTML5 tag อ้างถึงบทความ มีความหมายในตัวเอง -->
+        <header>
+            <h2>การเขียนแบบ Semantic Markup ของ HTML5</h2><!-- article html element is use <h2> - <h6> -->
+            <time datetime="2010-05-05" pubdate>May 5th, 2010</time>
+        </header>
+        <p>Semantic Markup เป็นการเขียนให้ Search Engine เข้ามาเก็บข้อมูลได้ง่ายครับ ซึ่งจะทำให้เก็บข้อมูลได้เร็วขึ้น และติดอันดับง่ายขึ้นด้วยครับ</p>
+        <section><!-- HTML5 tag อ้างถึงส่วนต่างๆของเอกสาร  Don't use to do Layout use div instead -->
+            <header>
+                <h2 title="this tooltip">มี tag ใหม่เพิ่มมาดังนี้</h2><!-- Attribute title คือ tooltip เมื่อเอาเมาส์ชี้ -->
+            </header>
+            <ol><!-- ul จะเป็นจุด ol จะเป็นตัวเลขลำดัับ -->
+                <li>article</li>
+                <li>section</li>
+                <li>aside</li>
+                <li>hgroup</li>
+                <li>header</li>
+                <li>footer</li>
+                <li>nav</li>
+                <li>time</li>
+                <li>mark</li>
+                <li>figure</li>
+                <li>figcaption</li>
+            </ol>
+            <footer>
+                Section Footer
+            </footer>
+        </section>
+        <section>
+            <header>
+                <h2><i>p paragraphs</i></h2>
+            </header>
+            <p>tag p ถ้าต้องการให้<small>ข้อความตัวเล็ก</small>ใช้ small, ถ้าต้องการให้<strong>ข้อความตัวหนา</strong>ใช้ strong,<!-- small ตัวเล็ก -->
+                และสามารถใช้ b สำหรับ <b>ข้อความหนา</b>และ<!-- strong, b ตัวหนา -->  
+                ถ้าต้องการให้<i>ข้อความเอียง</i>ใช้ i,</br><!-- i ตัวเอียง -->    
+                ถ้าต้องการให้<u>ขีดเส้นใต้ข้อความ</u>ใช้ u,<!-- u ขีดเส้นใต้ -->
+                ถ้าต้องการให้<mark>ข้อความไฮไล</mark>ใช้ mark,<!-- HTML5 mark tag is use highlight ข้อความ -->
+                ถ้าต้องการให้<del>ขีดฆ่าข้อความ</del>ใช้ del</p><!-- del ขีดฆ่าข้อความ -->
+            <figure><!-- HTML5 figue ใช้อ้างถึงรูปภาพ -->
+                <img src="https://cdn.pixabay.com/photo/2019/10/19/11/35/wolf-4561204__480.png" height="300px"/>
+                <figcaption>คำอธิบายภาพ figcaption is included in the figure</figcaption><!-- HTML5 อ้างถึงคำอธิบายภาพอยู่ใน figure -->
+            </figure> 
+            <!-- ข้อความ lorem10 --><!-- small, strong, b, i, u -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, id!</p>
+        </section>
+        <footer>
+            Article Footer
+        </footer>
+    </article>
+    <footer> <!-- tag อ้างถึงส่วนท้ายหรือล่างสุดของเอกสาร -->
+        <address><!-- tag is use Contact information -->
+            Author: Bird pakornpong<br />
+            <a href="mailto:bird19_37@hotmail.com">Contact Author</a><!-- Attribute href="mailto:<email>" จะส่งเมลหา ใช้ติดต่อเมลนี้-->
+        </address>
+        <p>© copyright 2021 Bird HTML5</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- lang="en-US" คือ attribute เพื่อประกาศภาษาของเว็ปเพจ en ภาษา US ประเทศ -->
+<html lang="en-US">
+    <head>
+        <!-- การกำหนดชุดตัวอักษรทำได้ง่ายขึ้น -->
+        <meta charset="utf-8" />
+     
+        <title>HTML5 Semantic Markup Demo: Cross Browser</title>
+        <link rel="stylesheet" href="html5reset.css" type="text/css" />
+        <link rel="stylesheet" href="html5semanticmarkup.css" type="text/css" />
+
+        <style type="text/css">
+            /* flex-wrap: wrap ทำให้ element ข้างใน ขึ้นบรรทัดใหม่ เหมือนเกินความกว้าง*/
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            /* nav a คือการกำหนด css ให้ tag a in tag nav */
+            nav a {
+                text-decoration: none;
+                padding: 15px 25px;
+                color: #464141;
+                margin: 0;
+                font-family: sans-serif;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <hgroup>
+                <h1>We use hgroup to wrap one or more heading element from h1 - h6</h1>
+                <h2>Semantic ออกเสียง เซแมนติก แปลว่า ความหมาย</h2>
+            </hgroup>
+        </header> 
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Projects</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Profile</a>
+            <a href="#">Contact</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Profile</a>
+            <a href="#">Contact</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Profile</a>
+            <a href="#">Contact</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Profile</a>
+            <a href="#">Contact</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Profile</a>
+            <a href="#">Contact</a>
+        </nav>
+        <p>nav tag one of the HTML5 elements. It is used to specify a block of navigation links.</p>
+        <p>specify ออกเสียง สแปซิฟาย แปลว่า ระบุ / navigation ออกเสียง เนวิเกชั่น แปลว่า นำทาง</p>
+        <article>
+            <h2>article  tag is HTML5 elements. It use to define an indepment, self-contained content.</h2>
+            <p>องค์ประกอบของบทความแสดงถึงองค์ประกอบที่สมบูรณ์หรือมีอยู่ในตัวเองในเอกสาร หน้า ใบสมัคร หรือเว็บไซต์ และโดยหลักการแล้ว แจกจ่ายหรือนำกลับมาใช้ใหม่ได้อย่างอิสระ เช่น ในการเผยแพร่ อาจเป็นโพสต์ในฟอรัม บทความในนิตยสารหรือหนังสือพิมพ์ รายการบล็อก ความคิดเห็นที่ผู้ใช้ส่งมา วิดเจ็ตหรือแกดเจ็ตแบบโต้ตอบ หรือเนื้อหาอิสระอื่นๆ</p>
+            <p>The game will be held on <time datetime="2018-09-28 19:00">September 28</time>.</p>
+            <address>
+                Author: W3docs team<br />
+                <a href="mailto:bird19_37@hotmail.com">Contact Author</a>
+            </address>
+            <p>คุณควรวาง address tag insile article element</p>
+            <!-- tag address  you must place the <address> tag inside the <article> element. -->
+            <section>
+                <h2>section tag is HTML5 elements, </h2>
+                <p>section tag is often used when creating a landing page to divide the page into separate logical blocks </p>          
+            </section>
+            <section>
+                <h2>section tag is HTML5 elements. </h2>
+                <p></p>
+             </section>
+        </article>
+        <aside>
+            <h4>Game of Thrones</h4>
+            <p>Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss. It is an adaptation of A Song of Ice and Fire, George R. R. Martin's series of fantasy novels</p>
+          </aside>
+        <h1>จุดเด่นของ HTML5</h1>
+        <ul>
+            <li>โค้ดเป็นระเบียบทำให้ Search Engine เก็บข้อมูลได้ง่าย</li>
+            <li>Form Enhancement ( Enhancement แปลว่า การเพิ่มประสิทธิภาพ )</li>
+            <li>ContentEditable: สามารถคลิกบนข้อความในเว็บเพื่อแก้ไขได้จากตรงนั้นเลย</li>
+            <li>Drag and Drop: ลากของมาวาง</li>
+        </ul>
+        <!-- ul จะเป็นจุด ol จะเป็นตัวเลขลำดัับ -->
+        <ol>
+            <li>A</li>
+            <li>b</li>
+            <li>c</li>
+            <li>d</li>
+        </ol>
+
+       
+    </body>
+</html>
